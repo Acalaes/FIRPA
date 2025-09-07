@@ -1,0 +1,79 @@
+Transforme esta landing page de loja de chapéus em uma landing page para FIRPA - Framework Inteligente de RPA para Administração Pública.
+
+CONTEXTO:
+- FIRPA é uma ferramenta de avaliação de maturidade digital para implementação de RPA em órgãos públicos
+- Baseado em pesquisa acadêmica publicada no EnANPAD 2025
+- Autor: Alexandre Calaes, Pesquisador em Automação pela UDESC
+
+ESTRUTURA DA LANDING PAGE:
+
+1. HERO SECTION:
+Título: "FIRPA - Avalie a Maturidade Digital da sua Organização"
+Subtítulo: "Framework científico para implementação de RPA no setor público"
+CTA: "Iniciar Avaliação Gratuita"
+
+2. CALCULADORA INTERATIVA (substituir galeria):
+- 4 dimensões de avaliação com sliders:
+  * Maturidade de Processos (0-100%)
+  * Infraestrutura Tecnológica (0-100%)
+  * Capacitação da Equipe (0-100%)
+  * Governança Digital (0-100%)
+- Resultado em tempo real mostrando:
+  * Score de Maturidade (gauge visual)
+  * Nível: Inicial/Intermediário/Avançado/Otimizado
+  * Potencial de economia anual
+  * Roadmap recomendado (3 próximos passos)
+
+3. SEÇÕES (substituir Collections):
+- "Dimensões Avaliadas" (em vez de Men's Hats)
+- "Casos de Sucesso" (em vez de Women's Hats)
+- "Metodologia Científica" (em vez de Vintage Collection)
+- "Benchmarks do Setor" (em vez de Seasonal Styles)
+
+4. SERVIÇOS (adaptar Services):
+- Diagnóstico de Maturidade
+- Roadmap de Implementação
+- Treinamento de Equipes
+- Auditoria de Processos
+
+5. VISUAL:
+- Cores: Azul governo (#004085) e verde digital (#00C851)
+- Substituir imagem de chapéus por dashboard/gráficos de automação
+- Ícones de processos, robôs, gráficos
+- Logo: "FIRPA" em fonte moderna
+
+6. FOOTER:
+"© 2024 FIRPA - Baseado em pesquisa apresentada no EnANPAD 2025
+Desenvolvido por Alexandre Calaes | UDESC"
+
+CÓDIGO JAVASCRIPT PARA CALCULADORA:
+```javascript
+// Adicionar no arquivo principal
+const calcularMaturidade = () => {
+  const processos = document.getElementById('processos').value;
+  const tecnologia = document.getElementById('tecnologia').value;
+  const equipe = document.getElementById('equipe').value;
+  const governanca = document.getElementById('governanca').value;
+  
+  // Algoritmo baseado na pesquisa
+  const score = (processos * 0.3 + tecnologia * 0.25 + 
+                 equipe * 0.25 + governanca * 0.2);
+  
+  // Classificação
+  let nivel = '';
+  if (score >= 75) nivel = 'Otimizado';
+  else if (score >= 50) nivel = 'Avançado';
+  else if (score >= 25) nivel = 'Intermediário';
+  else nivel = 'Inicial';
+  
+  // Economia potencial (baseado em dados reais)
+  const economia = Math.round(score * 5000); // R$ por mês
+  
+  // Atualizar interface
+  document.getElementById('score').textContent = score + '%';
+  document.getElementById('nivel').textContent = nivel;
+  document.getElementById('economia').textContent = 'R$ ' + economia.toLocaleString('pt-BR');
+  
+  // Gerar roadmap dinâmico
+  gerarRoadmap(nivel);
+};
