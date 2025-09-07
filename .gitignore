@@ -1,6 +1,72 @@
-node_modules
-dist
-.DS_Store
-server/public
-vite.config.ts.*
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
 *.tar.gz
+
+# Development files
+*.log
+*.local
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# Server generated files
+server/public/
+
+# Vite config backups
+vite.config.ts.*
+
+# Database files
+*.db
+*.sqlite
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# Screenshots e imagens anexadas
+attached_assets/
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Cache
+.cache/
+.npm/
+
+# Replit specific
+.replit
+.config/
+.cache/
+.upm/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
