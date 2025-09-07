@@ -5,22 +5,22 @@ export default function Methodology() {
   const components = [
     {
       title: "RPA - Automação Robótica",
-      description: "Automação de tarefas repetitivas e baseadas em regras com foco na interoperabilidade e eficiência operacional.",
+      description: "Automação de tarefas repetitivas baseadas em regras.",
       color: "bg-primary text-primary-foreground"
     },
     {
       title: "DMN - Decision Model Notation",
-      description: "Formalização de regras de decisão para garantir transparência, auditabilidade e adaptabilidade regulatória.",
+      description: "Regras de decisão transparentes e auditáveis.",
       color: "bg-secondary text-white"
     },
     {
       title: "AHP - Analytic Hierarchy Process",
-      description: "Priorização científica de processos baseada em critérios multicritério para seleção otimizada de automação.",
+      description: "Priorização multicritério de processos.",
       color: "bg-accent text-accent-foreground"
     },
     {
       title: "Ergonomia Cognitiva",
-      description: "Redução da carga mental e melhoria do bem-estar laboral através de interfaces intuitivas e processos humanizados.",
+      description: "Redução da carga mental e melhoria do bem-estar laboral.",
       color: "bg-muted text-muted-foreground"
     }
   ];
@@ -33,8 +33,7 @@ export default function Methodology() {
             Metodologia BRIDGE
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Business Rules Integration for Decision Governance and Ergonomics - 
-            Integração científica de RPA, DMN, AHP e Ergonomia Cognitiva
+            Integração de RPA, DMN, AHP e Ergonomia Cognitiva
           </p>
         </div>
 

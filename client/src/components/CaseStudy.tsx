@@ -10,9 +10,9 @@ export default function CaseStudy() {
   ];
 
   const achievements = [
-    "Redução de 40% no tempo de processamento de matrículas",
-    "Automação de 85% dos processos de baixa complexidade",
-    "Economia anual de R$ 2,4 milhões em custos operacionais"
+    "Previsão: 40% menos tempo em matrículas",
+    "Previsão: 85% dos processos automatizados",
+    "Previsão: R$ 2,4 milhões de economia anual"
   ];
 
   const scientificBasis = [
@@ -30,8 +30,7 @@ export default function CaseStudy() {
             Caso UDESC/ESAG
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Implementação da Metodologia BRIDGE em processos seletivos de pós-graduação 
-            com resultados científicos validados
+            Previsão de implementação em processos seletivos de pós-graduação
           </p>
         </div>
 
@@ -64,8 +63,7 @@ export default function CaseStudy() {
                   Universidade do Estado de Santa Catarina
                 </h4>
                 <p className="text-muted-foreground mb-4">
-                  Implementação do framework FIRPA no Programa de Pós-Graduação em Administração (ESAG) 
-                  para automação de processos seletivos usando metodologia científica rigorosa.
+                  Previsão de implementação no Programa de Pós-Graduação em Administração (ESAG).
                 </p>
                 <div className="space-y-2 text-sm">
                   {achievements.map((achievement, index) => (

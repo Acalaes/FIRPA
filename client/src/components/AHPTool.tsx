@@ -42,27 +42,27 @@ export default function AHPTool() {
     {
       id: "volume",
       name: "Volume de Execução",
-      description: "Frequência e quantidade de vezes que o processo é executado"
+      description: "Frequência de execução"
     },
     {
       id: "tempo",
       name: "Tempo de Processamento",
-      description: "Duração média para conclusão manual do processo"
+      description: "Duração média do processo"
     },
     {
       id: "complexidade",
       name: "Complexidade Técnica",
-      description: "Nível de padronização e regras claras do processo"
+      description: "Padronização e regras claras"
     },
     {
       id: "erro",
       name: "Taxa de Erro",
-      description: "Frequência de erros e retrabalho no processo atual"
+      description: "Frequência de erros e retrabalho"
     },
     {
       id: "impacto",
       name: "Impacto Organizacional",
-      description: "Importância estratégica e impacto nos usuários finais"
+      description: "Importância estratégica"
     }
   ];
 
@@ -184,8 +184,7 @@ export default function AHPTool() {
             Ferramenta AHP para Priorização de Processos
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Utilize o Método de Análise Hierárquica (AHP) para identificar e priorizar 
-            processos mais adequados para automação RPA
+            Use AHP para priorizar processos para automação
           </p>
         </div>
 
@@ -223,7 +222,7 @@ export default function AHPTool() {
                         <Info className="h-5 w-5 text-muted-foreground" />
                       </TooltipTrigger>
                       <TooltipContent className="max-w-xs">
-                        <p>Compare a importância relativa de cada par de critérios para determinar seus pesos na avaliação final</p>
+                        <p>Compare pares de critérios para definir pesos</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -231,7 +230,7 @@ export default function AHPTool() {
               </CardHeader>
               <CardContent className="space-y-6">
                 <p className="text-sm text-muted-foreground">
-                  Compare a importância relativa de cada critério em relação aos outros
+                  Compare a importância relativa dos critérios
                 </p>
                 
                 {criteria.slice(0, -1).map((criterion1, i) => 
@@ -461,8 +460,7 @@ export default function AHPTool() {
 
                     <div className="bg-secondary/10 p-4 rounded-lg">
                       <p className="text-sm">
-                        <strong>Recomendação:</strong> Inicie a automação pelos processos com maior 
-                        pontuação, pois apresentam melhor relação custo-benefício para implementação RPA.
+                        <strong>Recomendação:</strong> Inicie pelos processos com maior pontuação.
                       </p>
                     </div>
 

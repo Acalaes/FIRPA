@@ -18,28 +18,28 @@ export default function MaturityCalculator() {
       label: 'Maturidade de Processos',
       weight: 30,
       value: 45,
-      description: 'Mapeamento, padronização e documentação de processos'
+      description: 'Mapeamento e padronização'
     },
     {
       id: 'tecnologia',
       label: 'Infraestrutura Tecnológica',
       weight: 25,
       value: 60,
-      description: 'Sistemas integrados, APIs e infraestrutura digital'
+      description: 'Sistemas e infraestrutura digital'
     },
     {
       id: 'equipe',
       label: 'Capacitação da Equipe',
       weight: 25,
       value: 35,
-      description: 'Conhecimento em automação e ergonomia cognitiva'
+      description: 'Conhecimento em automação'
     },
     {
       id: 'governanca',
       label: 'Governança Digital',
       weight: 20,
       value: 50,
-      description: 'Transparência, auditabilidade e políticas digitais'
+      description: 'Transparência e políticas digitais'
     }
   ]);
 
@@ -143,7 +143,7 @@ export default function MaturityCalculator() {
             Calculadora de Maturidade Digital
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Avalie a prontidão da sua organização para implementação de RPA baseado em metodologia científica
+            Avalie a prontidão para RPA com metodologia científica
           </p>
         </div>
 

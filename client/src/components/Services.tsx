@@ -7,22 +7,22 @@ export default function Services() {
     {
       icon: TrendingUp,
       title: "Diagnóstico de Maturidade",
-      description: "Avaliação científica baseada no framework FIRPA com métricas objetivas e roadmap personalizado."
+      description: "Avaliação FIRPA com métricas e roadmap."
     },
     {
       icon: Settings,
       title: "Implementação BRIDGE",
-      description: "Aplicação da metodologia integrada RPA+DMN+AHP com foco em ergonomia cognitiva."
+      description: "Metodologia RPA+DMN+AHP com ergonomia cognitiva."
     },
     {
       icon: GraduationCap,
       title: "Capacitação Especializada",
-      description: "Treinamento baseado em pesquisa acadêmica para equipes técnicas e gestores públicos."
+      description: "Treinamento para equipes e gestores públicos."
     },
     {
       icon: Shield,
       title: "Auditoria de Processos",
-      description: "Validação científica de implementações com foco em conformidade e melhoria contínua."
+      description: "Validação com foco em conformidade."
     }
   ];
 
@@ -34,8 +34,7 @@ export default function Services() {
             Serviços Especializados
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Implementação científica de automação com foco em resultados mensuráveis 
-            e sustentabilidade organizacional
+            Soluções científicas com resultados mensuráveis
           </p>
         </div>
 
@@ -77,7 +76,7 @@ export default function Services() {
             Acessar Ferramenta AHP para Priorização de Processos
           </Button>
           <p className="text-sm text-muted-foreground mt-3">
-            Identifique os processos com maior potencial de automação usando análise multicritério
+            Identifique processos prioritários para automação
           </p>
         </div>
       </div>

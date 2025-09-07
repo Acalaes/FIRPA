@@ -43,8 +43,7 @@ export default function FrameworkOverview() {
             Framework Tridimensional FIRPA
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Metodologia científica desenvolvida com base em revisão sistemática da literatura 
-            usando protocolo PRISMA-CIMO para implementação eficaz de RPA no setor público
+            Baseado em revisão sistemática com protocolo PRISMA-CIMO
           </p>
         </div>
 

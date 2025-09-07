@@ -24,9 +24,8 @@ export default function Hero() {
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed" data-testid="hero-description">
-            Metodologia científica baseada em pesquisa acadêmica para avaliar e implementar 
-            Automação Robótica de Processos em órgãos públicos com foco em transparência, 
-            auditabilidade e bem-estar laboral.
+            Metodologia científica para avaliar e implementar RPA no setor público.
+            Foco em transparência, auditabilidade e bem-estar laboral.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

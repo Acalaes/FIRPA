@@ -16,8 +16,7 @@ export default function Contact() {
           Transforme sua Organização
         </h2>
         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Implemente automação inteligente baseada em metodologia científica 
-          validada academicamente
+          Automação inteligente com metodologia validada
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
