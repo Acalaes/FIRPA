@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
-import { Calculator, ChevronRight, Info } from "lucide-react";
+import { Calculator, ChevronRight, Info, ExternalLink } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -183,9 +183,27 @@ export default function AHPTool() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif mb-4" data-testid="ahp-title">
             Ferramenta AHP para Priorização de Processos
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
             Use AHP para priorizar processos para automação
           </p>
+          
+          <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="text-sm text-foreground">
+                <strong>Ferramenta Completa Disponível:</strong> Acesse a versão avançada com análise multicritério completa
+              </div>
+              <Button 
+                asChild
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
+                data-testid="external-ahp-tool"
+              >
+                <a href="https://decision-udesc.com" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Acessar Decision UDESC
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
 
         <div className="max-w-5xl mx-auto">
@@ -464,18 +482,30 @@ export default function AHPTool() {
                       </p>
                     </div>
 
-                    <Button 
-                      onClick={() => {
-                        setStep(1);
-                        setComparisons([]);
-                        setProcessScores({});
-                      }}
-                      variant="outline"
-                      className="w-full"
-                      data-testid="restart-ahp"
-                    >
-                      Nova Análise
-                    </Button>
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <Button 
+                        onClick={() => {
+                          setStep(1);
+                          setComparisons([]);
+                          setProcessScores({});
+                        }}
+                        variant="outline"
+                        className="flex-1"
+                        data-testid="restart-ahp"
+                      >
+                        Nova Análise
+                      </Button>
+                      <Button 
+                        asChild
+                        className="flex-1 bg-secondary text-white hover:bg-secondary/90"
+                        data-testid="external-ahp-complete"
+                      >
+                        <a href="https://decision-udesc.com" target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          Análise Completa
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
