@@ -1,5 +1,6 @@
-import { TrendingUp, Settings, GraduationCap, Shield } from "lucide-react";
+import { TrendingUp, Settings, GraduationCap, Shield, Calculator } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export default function Services() {
   const services = [
@@ -61,6 +62,23 @@ export default function Services() {
               </Card>
             );
           })}
+        </div>
+        
+        <div className="mt-12 text-center">
+          <Button 
+            onClick={() => {
+              const element = document.getElementById('ahp-tool');
+              if (element) element.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="bg-secondary text-white hover:bg-secondary/90 px-8 py-4"
+            data-testid="button-ahp-tool"
+          >
+            <Calculator className="mr-2 h-5 w-5" />
+            Acessar Ferramenta AHP para Priorização de Processos
+          </Button>
+          <p className="text-sm text-muted-foreground mt-3">
+            Identifique os processos com maior potencial de automação usando análise multicritério
+          </p>
         </div>
       </div>
     </section>

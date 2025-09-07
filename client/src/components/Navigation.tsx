@@ -51,6 +51,13 @@ export default function Navigation() {
             >
               Casos
             </button>
+            <button 
+              onClick={() => scrollToSection('ahp-tool')} 
+              className="text-foreground hover:text-primary transition-colors"
+              data-testid="nav-ahp"
+            >
+              AHP
+            </button>
             <Button 
               onClick={() => scrollToSection('contato')} 
               className="bg-primary text-primary-foreground hover:bg-primary/90"
@@ -99,6 +106,13 @@ export default function Navigation() {
                 data-testid="mobile-nav-casos"
               >
                 Casos
+              </button>
+              <button 
+                onClick={() => scrollToSection('ahp-tool')} 
+                className="text-foreground hover:text-primary transition-colors text-left"
+                data-testid="mobile-nav-ahp"
+              >
+                Ferramenta AHP
               </button>
               <Button 
                 onClick={() => scrollToSection('contato')} 
