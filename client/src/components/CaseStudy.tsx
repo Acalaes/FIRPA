@@ -1,18 +1,18 @@
-import { Building, CheckCircle } from "lucide-react";
+import { Building, CheckCircle, TrendingUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function CaseStudy() {
   const metrics = [
-    { value: "83%", label: "Redução no Tempo", detail: "6 meses → 30 dias" },
-    { value: "85%", label: "Processos Automatizados", detail: "Baixa complexidade" },
-    { value: "R$ 2,4M", label: "Economia Anual", detail: "Custos operacionais" },
-    { value: "40%", label: "Redução Carga Mental", detail: "Ergonomia cognitiva" }
+    { value: "83%", label: "Redução Esperada", detail: "6 meses → 30 dias" },
+    { value: "85%", label: "Automação Prevista", detail: "Baixa complexidade" },
+    { value: "R$ 2,4M", label: "Economia Projetada", detail: "Custos operacionais" },
+    { value: "40%", label: "Melhoria Estimada", detail: "Ergonomia cognitiva" }
   ];
 
   const achievements = [
-    "Previsão: 40% menos tempo em matrículas",
-    "Previsão: 85% dos processos automatizados",
-    "Previsão: R$ 2,4 milhões de economia anual"
+    "Expectativa: 40% menos tempo em matrículas",
+    "Expectativa: 85% dos processos automatizados",
+    "Expectativa: R$ 2,4 milhões de economia anual"
   ];
 
   const scientificBasis = [
@@ -27,11 +27,20 @@ export default function CaseStudy() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground font-serif mb-4" data-testid="casos-title">
-            Caso UDESC/ESAG
+            Caso UDESC/ESAG - Resultados Esperados
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Previsão de implementação em processos seletivos de pós-graduação
+            Projeção de implementação em processos seletivos de pós-graduação
           </p>
+        </div>
+
+        <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-8 max-w-3xl mx-auto">
+          <div className="flex items-center gap-2">
+            <TrendingUp className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+            <p className="text-sm text-blue-900 dark:text-blue-100">
+              <strong>Nota:</strong> Resultados baseados em projeções científicas e análise comparativa com implementações similares.
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -63,7 +72,7 @@ export default function CaseStudy() {
                   Universidade do Estado de Santa Catarina
                 </h4>
                 <p className="text-muted-foreground mb-4">
-                  Previsão de implementação no Programa de Pós-Graduação em Administração (ESAG).
+                  Estudo de viabilidade para o Programa de Pós-Graduação em Administração (ESAG).
                 </p>
                 <div className="space-y-2 text-sm">
                   {achievements.map((achievement, index) => (
